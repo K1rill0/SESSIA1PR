@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SESSIA1PR"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="450" Width="701.026" ResizeMode="NoResize">
+    <Grid Margin="0,0,2,0">
+        <TextBlock HorizontalAlignment="Left" Margin="121,24,0,0" TextWrapping="Wrap" Text="Телеком Нева Связь" VerticalAlignment="Top" Height="25" Width="241" FontSize="19.5"/>
+        <TextBlock HorizontalAlignment="Left" Margin="121,135,0,0" TextWrapping="Wrap" Text="Номер" VerticalAlignment="Top" Height="30" Width="63" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="121,170,0,0" TextWrapping="Wrap" Text="Пароль" VerticalAlignment="Top" Height="30" Width="63" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="121,205,0,0" TextWrapping="Wrap" Text="Код" VerticalAlignment="Top" Height="30" Width="63" FontSize="16"/>
+        <TextBox HorizontalAlignment="Left" Height="31" Margin="212,134,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150"/>
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="212,170,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150"/>
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="212,205,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100"/>
+        <Button Content="Отмена" HorizontalAlignment="Left" Margin="212,272,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button Content="Вход" HorizontalAlignment="Left" Margin="315,272,0,0" VerticalAlignment="Top" Width="75"/>
+        <Image  Source="Images/Logo.jpg" HorizontalAlignment="Left" Height="140" Margin="554,0,0,0" VerticalAlignment="Top" Width="138"/>
+        <Image Source="Images/Obnova.jpg" HorizontalAlignment="Left" Height="30" Margin="317,205,0,0" VerticalAlignment="Top" Width="35" MouseDown="OnRefreshCode"/>
+
     </Grid>
 </Window>
