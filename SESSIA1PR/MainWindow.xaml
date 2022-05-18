@@ -11,13 +11,13 @@
         <TextBlock HorizontalAlignment="Left" Margin="121,135,0,0" TextWrapping="Wrap" Text="Номер" VerticalAlignment="Top" Height="30" Width="63" FontSize="16"/>
         <TextBlock HorizontalAlignment="Left" Margin="121,170,0,0" TextWrapping="Wrap" Text="Пароль" VerticalAlignment="Top" Height="30" Width="63" FontSize="16"/>
         <TextBlock HorizontalAlignment="Left" Margin="121,205,0,0" TextWrapping="Wrap" Text="Код" VerticalAlignment="Top" Height="30" Width="63" FontSize="16"/>
-        <TextBox HorizontalAlignment="Left" Height="31" Margin="212,134,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150"/>
-        <TextBox HorizontalAlignment="Left" Height="30" Margin="212,170,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150"/>
-        <TextBox HorizontalAlignment="Left" Height="30" Margin="212,205,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100"/>
+        <TextBox HorizontalAlignment="Left" Height="31" Margin="212,134,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150" Name = "Login"/>
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="212,170,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150" Name = "Password"/>
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="212,205,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" Name = "Kod"/>
         <Button Content="Отмена" HorizontalAlignment="Left" Margin="212,272,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
-        <Button Content="Вход" HorizontalAlignment="Left" Margin="315,272,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Вход" HorizontalAlignment="Left" Margin="315,272,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
         <Image  Source="Images/Logo.jpg" HorizontalAlignment="Left" Height="140" Margin="554,0,0,0" VerticalAlignment="Top" Width="138"/>
-        <Image Source="Images/Obnova.jpg" HorizontalAlignment="Left" Height="30" Margin="317,205,0,0" VerticalAlignment="Top" Width="35" MouseDown="OnRefreshCode"/>
+        <Image Source="Images/Obnova.jpg" HorizontalAlignment="Left" Height="30" Margin="317,205,0,0" VerticalAlignment="Top" Width="35" MouseDown="Image_MouseDown"/>
 
     </Grid>
 </Window>
