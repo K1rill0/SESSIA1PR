@@ -1,0 +1,53 @@
+﻿<Window x:Class="SESSIA2PR.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SESSIA2PR"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100px"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200px"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Image Source="Images\Лого ТНС.jpg" HorizontalAlignment="Center" VerticalAlignment="Center"></Image>
+
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Button Grid.Row="0" Content="Абоненты"></Button>
+            <Button Grid.Row="1" Content="Управление оборудованием"></Button>
+            <Button Grid.Row="2" Content="Активы"></Button>
+            <Button Grid.Row="3" Content="Биллинг"></Button>
+            <Button Grid.Row="4" Content="Поддержка пользователей"></Button>
+            <Button Grid.Row="5" Content="CRM"></Button>
+        </Grid>
+
+        <Grid Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5*"></ColumnDefinition>
+                <ColumnDefinition Width="5*"></ColumnDefinition>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label VerticalAlignment="Center" Grid.Column="0" FontSize="20" Content="Поддержка пользователей"></Label>
+
+            <ComboBox Grid.Column="1" Height="36px" ItemsSource="{Binding Personal}" SelectionChanged="Selector_OnSelectionChanged" x:Name="ComboBox"></ComboBox>
+            <Image Height="36px" Width="36px" Grid.Column="2" Source="{Binding Avatar}"></Image>
+        </Grid>
+
+        <Frame Grid.Column="1" Grid.Row="1" x:Name="MainFrame"></Frame>
+    </Grid>
+</Window>
